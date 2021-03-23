@@ -21,15 +21,15 @@
     <nav class="nav">
       <ul class="nav__list"> <!--__ because it's an component of nav-->
         <li class="nav__item"><a href="#"></a>Home</li>
-        <li class="nav__item"><a href="#"></a>My projects</li>
-        <li class="nav__item"><a href="#"></a>Skills</li>
-        <li class="nav__item"><a href="#">Education</a></li>
+        <li class="nav__item"><a href="work"></a>Skills</li>
+        <li class="nav__item"><a href="about"></a>About me</li>
+        <li class="nav__item"><a href="#">My work</a></li>
       </ul>
     </nav>
   </header>
 
   <!--INTRODUCTION-->
-  <section class="intro">
+  <section class="intro" id="home">
     <h1 class="section__title section__title--intro">
       Hi, I am <strong>Ishana Koopman</strong>
     </h1>
@@ -37,8 +37,32 @@
     <img src="./img/Ishana.jpg" alt="Ishana smiles" width=10%>
   </section>
   
-  <!-- Mimosa-->
+  <!--Service-->
+  <section class="my-services" id="service">
+    <h2 class="section__title section__title--services">Skills</h2>
+    <div class="services">
+      <div class="service">
+        <h3>HTML, CSS, Bootstrap</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolore commodi corporis nulla tempore dicta a mollitia quas fuga quaerat?</p>
+      </div> <!--Close service-->
+      <div class="service">
+        <h3>Javascript, Python</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sunt quo sapiente incidunt rerum officia totam, atque similique laboriosam iste.</p>
+      </div> <!--Close service-->
+      <div class="service">
+        <h3>Responsive, Wordpress</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, corrupti? Atque impedit nemo quis, ipsum rem vero quibusdam expedita fuga.</p>
+      </div> <!--Close service-->
+    </div> <!--Close services-->
 
+    <a href="#see my projects" class="btn"></a>
+  </section>
+
+  <!--About me-->
+  <section class="about-me" id="about">
+    <h2 class="section__title section__title-about"> Who I am</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, unde architecto explicabo dolore dolorem adipisci.</p>
+  </section>
 
   
 </body>
