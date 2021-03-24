@@ -1,0 +1,58 @@
+*,
+*::before
+*::after {
+  box-sizing: border-box;
+}
+
+/* Custom properties */
+
+:root {
+  --ff-primary: 'Source Sans Pro', sans-serif;
+  --ff-secondary: 'Surce Code Pro', monospace;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --clr-bg: #fff;
+  --clr-text: #303030;
+  --clr-orange: #b76e22;
+  --clr-pink: #c7998c;
+  --clr-red: #763838;
+  --clr-green: #1f6366;
+  --clr-beige: #f2e8db; 
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-h4: 1rem;
+}
+
+@media (min-width: 800px) {
+  --fs-h1: 4.5rem;
+  --fs-h2: 3.75rem;
+  --fs-h3: 1.5rem;
+  --fs-h4: 1.25rem;
+}
+
+/* General styles */
+
+body {
+  background: var(--clr-beige);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
