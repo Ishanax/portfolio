@@ -23,16 +23,17 @@
     </button>
     <nav class="nav">
       <ul class="nav__list"> <!--__ because it's an component of nav-->
-        <li class="nav__item"><a href="home"></a>Home</li>
-        <li class="nav__item"><a href="service"></a>Skills</li>
-        <li class="nav__item"><a href="about"></a>About me</li>
-        <li class="nav__item"><a href="work">My projects</a></li>
+        <!--LINKS DON'T WORK??-->
+        <li class="nav__item"><a href="#home" class="nav__link"></a>Home</li>
+        <li class="nav__item"><a href="#service" class="nav__link"></a>Skills</li>
+        <li class="nav__item"><a href="#about" class="nav__link"></a>About me</li>
+        <li class="nav__item"><a href="work" class="nav__link">My projects</a></li>
       </ul>
     </nav>
   </header>
 
   <!--Introduction-->
-  <section class="intro" id="home">
+  <section id="home" class="intro">
     <h1 class="section__title section__title--intro">
       Hi, I am <strong>Ishana Koopman</strong>
     </h1>
@@ -41,11 +42,11 @@
   </section>
   
   <!--Service-->
-  <section class="my-services" id="service">
+  <section class="my-services">
     <h2 class="section__title section__title--services">Skills</h2>
     <div class="services">
       <div class="service">
-        <h3>HTML, CSS, Bootstrap</h3>
+        <h3 id="service">HTML, CSS, Bootstrap</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolore commodi corporis nulla tempore dicta a mollitia quas fuga quaerat?</p>
       </div> <!--Close service-->
       <div class="service">
@@ -63,7 +64,7 @@
 
   <!--About me-->
   <section class="about-me" id="about">
-    <h2 class="section__title section__title-about"> Who I am</h2>
+    <h2 class="section__title section__title-about">Who I am</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, unde architecto explicabo dolore dolorem adipisci.</p>
 
     <div class="about-me__body">
