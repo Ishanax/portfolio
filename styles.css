@@ -233,18 +233,18 @@ nav {display: none; }
   margin: 0 auto;
 }
 
-.about-me__img {
+/* .about-me__img {
   box-shadow: var(--bs); 
-}
+} */
 
 @media (min-width: 600px){
   .about-me {
     display: grid;
-    grid-template-columns: 1fr 200px;
-    grid-template-areas:
+    /* grid-template-columns: 1fr 200px; */
+    /* grid-template-areas:
       "title img"
       "subtitle img"
-      "text img";
+      "text img"; */
     grid-column-gap: 2em;
   }
 
@@ -258,15 +258,15 @@ nav {display: none; }
     position: relative;
     left: -1em;
     right: -1em;
-    width: calc(100% + 2em);
+    width: 70%;
     padding-left: 1em;
     padding-right: calc(200px + 4em);
  }
-  .about-me__img {
+  /* .about-me__img {
     grid-area: img;
     position: relative;
     z-index: 2;
-  }
+  } */
 }
 
 /* Work */
@@ -283,9 +283,29 @@ nav {display: none; }
   margin-bottom: 2em;
 }
 
+
 .portofolio {
-  display:grid;
+  display: grid;
+  grid-gap: .5em;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 1280;  
+  margin: 0 auto;
+}
+
+.portofolio__item {
+  background:var(--clr-orange);
+  overflow: hidden;
+}
+
+.portofolio__img{
+  transition: 
+    transform 750ms cubic-bezier(.5, 0, .5, 1);
+    opacity 250ms linear;
+}
+
+.portofolio__img:hover {
+  transform: scale(1.2);
+  opacity: .85;
 }
 
 
