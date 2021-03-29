@@ -83,8 +83,9 @@ strong {
 
 .btn:hover {
   transform: scale(1.4);
-}
+  transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 
+}
 
 
 /* Typography */
@@ -132,9 +133,66 @@ h3 {
   margin-bottom: 1em;
 }
 
-/* temporary get rid of nav */
+/* Header */
 
-nav {display: none; }
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.logo { 
+  width: 40%;
+}
+
+.nav {
+  position: fixed;
+  background:var(--clr-text);
+  color:var(--clr-pink);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right:0;
+  z-index: 100;
+
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(.5,0,.5,1);
+}
+
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  color: inherit;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h2);
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  color:var(--clr-orange);
+}
+
+/* Hamburger */
+
+.hamburger {
+  background:var(--clr-orange);
+  width: 2em;
+  height: 3px;
+  border-radius: 1em;
+  display: block;
+  position: relative;
+}
+
 
 /* Intro section */
 
@@ -303,11 +361,58 @@ nav {display: none; }
     opacity 250ms linear;
 }
 
-.portofolio__img:hover {
-  transform: scale(1.2);
-  opacity: .85;
+.portfolio__item:focus {
+  position: relative;
+  z-index: 2;
 }
 
+.portofolio__img:hover,
+.portofolio__item:focus .portofolio__img {
+  transform: scale(1.2);
+  opacity: .65;
+}
+
+/* footer */
+.footer {
+  background:var(--clr-beige);
+  color: var(--clr-green);
+  text-align: center;
+  padding: 2.5em 0;
+  font-size: var(--fs-h3);
+}
+
+.footer a { 
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer__link {
+  font-weight: var(--fw-bold);
+}
+
+.footer__link:hover,
+.social-list__link:hover {
+  opacity: .8;
+}
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.social-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0.5em 0 0;
+  padding: 0;
+}
+
+.social-list__item {
+  margin: 1em;
+}
+
+.social-list__link {
+  padding: .5em;
+}
 
 
 
