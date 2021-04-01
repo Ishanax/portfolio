@@ -16,9 +16,9 @@
   --clr-bg: #fff;
   --clr-text: #303030;
   --clr-orange: #b76e22;
-  --clr-pink: #c7998c;  
+ 
   --clr-green: #1f6366;
-  --clr-beige: #f2e8db; 
+  --clr-beige: #fff; 
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -74,7 +74,7 @@ strong {
 .btn {
   display: inline-block;
   padding: .5em 2.5em;
-  background: var(--clr-orange);
+  background: var(--clr-green);
   color: var(--clr-dark);
   text-decoration: none;
   cursor: pointer;
@@ -137,6 +137,10 @@ h3 {
   margin-bottom: 1em;
 }
 
+.section__subtitle--about {
+  color: var(--clr-orange) !important;
+}
+
 /* Header */
 
 header {
@@ -153,7 +157,7 @@ header {
 .nav {
   position: fixed;
   background:var(--clr-text);
-  color:var(--clr-pink);
+  
   top: 0;
   bottom: 0;
   left: 0;
@@ -218,8 +222,6 @@ header {
 .nav-open .hamburger::after {
   opacity: 0;
 }
-
-
 
 .hamburger {
   display: block;
@@ -297,15 +299,15 @@ header {
 /* Skills section */
 
 .my-services {
-  background-color:#c7998c;
+  background-color: var(--clr-text);
   background-image: url(../img/mac.png);
   background-size: cover;
-  color: var(--clr-text);
+  color: var(--clr-bg);
   text-align: center;
 }
 
 .section__title--services {
-  color: var(--clr-green);
+  color: var(--clr-orange);
   position: relative;
 }
 
@@ -376,6 +378,10 @@ header {
     padding-left: 1em;
     padding-right: calc(200px + 4em);
  }
+
+ .about-me p {
+   color: var(--clr-text);
+ }
   /* .about-me__img {
     grid-area: img;
     position: relative;
@@ -433,7 +439,7 @@ header {
   background:var(--clr-beige);
   color: var(--clr-green);
   text-align: center;
-  padding: 2.5em 0;
+  padding: 2em 0;
   font-size: var(--fs-h3);
 }
 
