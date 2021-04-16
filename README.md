@@ -1,2 +1,2 @@
-# resume
-A resume website to show my projects, education and skills.
+# Portfolio
+This website is made from scratch with HTML, CSS & JS. It shows my projects and skills.
