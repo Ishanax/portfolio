@@ -39,6 +39,7 @@
 
 html {
   scroll-behavior: smooth;
+  
 }
 
 /* General styles */
@@ -150,8 +151,7 @@ header {
 }
 
 .logo { 
-  width: 40%;
-  
+  width: 40%; 
 }
 
 .nav {
@@ -284,6 +284,10 @@ header {
       position: relative;
       z-index: 2;
   }  
+
+  .logo {
+    width: 2em;
+  }
   
   .section__subtitle--intro {
     align-self: start;
@@ -386,11 +390,7 @@ header {
  .about-me p {
    color: var(--clr-text);
  }
-  /* .about-me__img {
-    grid-area: img;
-    position: relative;
-    z-index: 2;
-  } */
+ 
 }
 
 /* Work */
@@ -407,7 +407,6 @@ header {
   margin-bottom: 2em;
 }
 
-
 .portofolio {
   display: grid;
   grid-gap: .5em;
@@ -417,7 +416,7 @@ header {
 }
 
 .portofolio__item {
-  background:var(--clr-orange);
+  background:var(--clr-text);
   overflow: hidden;
 }
 
@@ -437,6 +436,7 @@ header {
   transform: scale(1.2);
   opacity: .65;
 }
+
 
 /* footer */
 .footer {
