@@ -285,9 +285,7 @@ header {
       z-index: 2;
   }  
 
-  .logo {
-    width: 2em;
-  }
+  
   
   .section__subtitle--intro {
     align-self: start;
