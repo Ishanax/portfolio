@@ -57,10 +57,10 @@ section {
   padding: 3em 2em;
 }
 
-img {
+/* img {
   display: block;
   max-width: 100%;
-}
+} */
 
 strong {
   font-weight: var(--fw-bold); 
@@ -168,7 +168,6 @@ header {
   transition: transform 250ms cubic-bezier(.5,0,.5,1);
 }
 
-
 .nav__list {
   list-style: none;
   display: flex;
@@ -258,6 +257,8 @@ header {
 }
 
 .intro__img {
+  display: block;
+  max-width: 100%;
   box-shadow: var(--bs);
 }
 
@@ -305,7 +306,6 @@ header {
 }
 
 /* Skills section */
-
 .my-services {
   background-color: var(--clr-text);
   background-image: url("./img/mac.png");
@@ -359,7 +359,6 @@ header {
   max-width: 1000px;
   margin: 0 auto;
 }
-
 
 .about-me p {
   color: var(--clr-text);
@@ -429,6 +428,8 @@ header {
 }
 
 .portofolio__img{
+  display: block;
+  max-width: 100%;
   transition: 
     transform 750ms cubic-bezier(.5, 0, .5, 1);
     opacity: 250ms linear;
@@ -454,6 +455,16 @@ header {
 }
 
 /* footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* 
+
 .footer {
   background:var(--clr-beige);
   color: var(--clr-green);
@@ -469,9 +480,9 @@ header {
 
 .footer__link {
   font-weight: var(--fw-bold);
-}
+} 
 
-.footer__link:hover,
+ .footer__link:hover,
 .social-list__link:hover {
   opacity: .8;
 }
@@ -482,6 +493,7 @@ header {
 .social-list {
   list-style: none;
   display: flex;
+  color: var(--clr-green);
   justify-content: center;
   margin: 0.5em 0 0;
   padding: 0;
@@ -493,12 +505,4 @@ header {
 
 .social-list__link {
   padding: .5em;
-}
-
-
-
-
-
-
-
-
+}  */

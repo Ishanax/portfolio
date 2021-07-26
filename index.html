@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" /> <!--Normalize evens out differerences in css between browsers-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" /> Normalize evens out differerences in css between browsers -->
+  
   
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
   
@@ -84,6 +84,17 @@
     <p class="section__subtitle--work">A selection of my projects</p>
 
     <div class="portofolio">
+
+      <!-- Portofolio item  -->
+      <a href="https://ishanax.github.io/Pac-Man/" class="portofolio__item" target="_blank">
+        <img src="./img/pacman.png" alt="pacman game" class="portofolio__img">
+      </a> 
+
+      <!-- Portofolio item  -->
+      <a href="https://ishanax.github.io/snake/" class="portofolio__item" target="_blank">
+        <img src="./img/snake.png" alt="snake game" class="portofolio__img">
+      </a> 
+
       <!-- Portofolio item  -->
       <a href="http://lilyhum.com" class="portofolio__item" target="_blank">
         <img src="./img/lilyhum.png" alt="portfolio for digital artist" class="portofolio__img">
@@ -129,20 +140,18 @@
   </section> 
 
   <!--Footer-->
-  <footer class="footer">
-    <ul class="social-list">
-      <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/ishana-koopman-a63683b9/">
-          <i class="fab fa-linkedin"></i>
-        </a>
-    </li>
 
-      <li class="social-list__item"><a class="social-list__link" href="https://github.com/Ishanax">
-        <i class="fab fa-github"></i>
-      </a>
-    </li>
+  <footer >
+    <ul class="social-list"></ul>
+    <a  href="https://www.linkedin.com/in/ishana-koopman-a63683b9/">
+      <img class="footer__icon"src="img/linkedin.svg" alt="LinkedIn logo and icon">
+    </a>
+    <a class="footer__item" href="https://github.com/Ishanax">
+      <img class="footer__icon"src="img/github.svg" alt="Github logo and icon">
+    </a>
 
-    </ul>
   </footer>
+  
   <script src="./js/script.js"></script>
 </body>
 </html>
